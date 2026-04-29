@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustituciones Hamburguesa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #fff8f0, #fde2e4);
+      margin: 0;
+      padding: 30px;
+      color: #5a3d2b;
+    }
+
+    .contenedor {
+      max-width: 750px;
+      margin: auto;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    }
+
+    h1 {
+      text-align: center;
+      color: #7a3e2b;
+      margin-bottom: 30px;
+    }
+
+    .grupo {
+      background: #fffaf5;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #a14f2a;
+      font-size: 22px;
+    }
+
+    .opcion {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #ffffff;
+      padding: 14px 16px;
+      border-radius: 16px;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .opcion:hover {
+      transform: scale(1.01);
+      box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .opcion label {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: 20px;
+      height: 20px;
+      accent-color: #d35400;
+    }
+
+    .precio {
+      color: #c05a00;
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: -5px;
+      margin-bottom: 15px;
+    }
+
+    .boton {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 16px;
+      background: #d35400;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(211, 84, 0, 0.25);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .boton:hover {
+      background: #b54800;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Sustituciones para Hamburguesa</h1>
+
+    <div class="grupo">
+      <h2>Ingredientes</h2>
+
+      <div class="opcion">
+        ><input type="checkbox"> Carne</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Queso</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Vegetales</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Huevo codorniz</label>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <h2>Toppings</h2>
+      <p class="precio">Cada topping adicional cuesta $1.000</p>
+
+      <div class="opcion">
+        ><input type="checkbox"> Huevos de codorniz</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Huevo frito</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Tocineta</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Maíz tierno</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="checkbox"> Tajadas</label>
+      </div>
+    </div>
+
+    <div class="grupo">
+      <h2>Bebidas</h2>
+
+      <div class="opcion">
+        ><input type="radio" name="bebida"> Gaseosa 400 ml</label>
+      </div>
+
+      <div class="opcion">
+        ><input type="radio" name="bebida"> Gaseosa 1.5 L</label>
+      </div>
+    </div>
+
+    <button class="boton" type="button">Guardar pedido</button>
+  </div>
+</body>
+</html>
